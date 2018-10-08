@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Form" name="Main" cloudDestinationProperty="Main" scrollableY="false" layout="BorderLayout" borderLayoutAbsoluteCenter="false" title="ChooseU" >
+  <component type="TextField" name="text" cloudBoundProperty="text" cloudDestinationProperty="candidateName" text="" >
+    <layoutConstraint value="North" />
+  </component>
+  <component type="Button" name="execute" cloudDestinationProperty="execute" text="GO!" >
+    <layoutConstraint value="South" />
+  </component>
+  <component type="Container" name="result" cloudDestinationProperty="result" layout="BoxLayout" boxLayoutAxis="Y" >
+    <layoutConstraint value="Center" />
+    <component type="Label" name="info" cloudDestinationProperty="data" text="" >
+    </component>
+    <component type="Container" name="candidateList" cloudDestinationProperty="candidateList" scrollableY="true" layout="BoxLayout" boxLayoutAxis="Y" >
+    </component>
+    <component type="Container" name="config" cloudDestinationProperty="config" scrollableY="true" layout="BoxLayout" boxLayoutAxis="Y" >
+      <component type="RadioButton" name="rbAll" cloudDestinationProperty="RadioButton" text="ALL" group="config" selected="true" textPosition="1" >
+      </component>
+      <component type="Slider" name="allWeight" cloudDestinationProperty="Slider" tensileDragEnabled="true" text="" editable="true" thumbImage="thumbImg.png" increments="1" maxValue="101" minValue="0" renderPercentageOnTop="true" gap="2" verticalAlignment="0" >
+      </component>
+      <component type="RadioButton" name="rbInd" cloudDestinationProperty="RadioButton1" text="INDIVIDUAL" group="config" textPosition="1" >
+      </component>
+      <component type="TextField" name="individual" cloudBoundProperty="text" cloudDestinationProperty="TextField" text="" hint=" (Using &quot;;&quot; as separator)" >
+      </component>
+      <component type="Slider" name="indWeight" cloudDestinationProperty="Slider" tensileDragEnabled="true" text="" editable="true" thumbImage="thumbImg.png" increments="1" maxValue="101" minValue="0" renderPercentageOnTop="true" gap="2" verticalAlignment="0" >
+      </component>
+      <component type="Container" name="Container" cloudDestinationProperty="Container" layout="GridLayout" gridLayoutRows="1" gridLayoutColumns="2" >
+        <component type="Button" name="apply" cloudDestinationProperty="apply" text="Apply" >
+        </component>
+        <component type="Button" name="configCancel" cloudDestinationProperty="configCancel" text="Cancel" >
+        </component>
+      </component>
+    </component>
+  </component>
+</component>

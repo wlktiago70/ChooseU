@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Dialog" name="NewCandidateConfirmation" cloudDestinationProperty="NewCandidateConfirmation" layout="BorderLayout" borderLayoutAbsoluteCenter="true" >
+  <component type="Container" name="Container" cloudDestinationProperty="Container" layout="GridLayout" gridLayoutRows="1" gridLayoutColumns="1" >
+    <layoutConstraint value="Center" />
+    <component type="SpanLabel" name="SpanLabel" cloudDestinationProperty="SpanLabel" uiid="Form" >
+      <custom name="text" type="java.lang.String" value="Include this one as new candidate?" />
+    </component>
+  </component>
+  <component type="Container" name="Container1" cloudDestinationProperty="Container1" layout="GridLayout" gridLayoutRows="1" gridLayoutColumns="2" >
+    <layoutConstraint value="South" />
+    <component type="Button" name="yesButton" cloudDestinationProperty="yesButton" text="Yes" >
+    </component>
+    <component type="Button" name="noButton" cloudDestinationProperty="noButton" text="No" >
+    </component>
+  </component>
+</component>
